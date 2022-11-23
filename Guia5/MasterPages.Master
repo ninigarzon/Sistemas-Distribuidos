@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPages.master.cs" Inherits="Guia5.MasterPages" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Auto Repuestos</title>
+    <link href="Styles/StyleSheet.css"  rel="stylesheet" type="text/css"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div id="wrapper">
+                <div id="banner"></div>
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/Imagenes/BannerCar.jpg" Width="100%"/>
+                <div id="navigation">
+                    <ul id="nav">
+                        <li>
+                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/index.aspx">Tiendas</asp:HyperLink></li>
+                        <li>
+                            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Pages/Nosotros.aspx">Nosotros</asp:HyperLink></li>
+                        <li>
+                            <asp:HyperLink ID="HyperLink3" runat="server">Reportes</asp:HyperLink></li>
+                        <li>
+                            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Pages/Administracion/Administracion.aspx">Administracion</asp:HyperLink></li>
+                    </ul>
+                </div>
+                <div id="content">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
